@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simplotel Tech</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="container">
+      <header>
+        <div class="icon">
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <i id="menu-toggle" class="fas fa-bars"></i>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#food">Food</a></li>
+            <li><a href="#restaurant">Restaurant</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <article>
+        <div class="img-container">
+          <img src="./images/img1.jpg" alt="image" class="image1" />
+        </div>
+        <div class="summary">
+          <p class="summary-head">LOREM IPSUM</p>
+          <p class="summarys">
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </article>
+      <aside>
+        <div class="aside"></div>
+        <hr />
+        <p class="header">Order Now</p>
+        <div class="card-cantainer">
+          <div class="card">
+            <img src="./images/img2.jpg" alt="BURGER" class="image2" />
+            <p class="card-head">BURGER</p>
+            <p class="card-summary">
+              Lorem Ipsum has been the industry's standard dummy text
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/img3.jpg" alt="PIZZA" class="image2" />
+            <p class="card-head">PIZZA</p>
+            <p class="card-summary">
+              Lorem Ipsum has been the industry's standard dummy text
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/img4.jpg" alt="PASTA" class="image2" />
+            <p class="card-head">PASTA</p>
+            <p class="card-summary">
+              Lorem Ipsum has been the industry's standard dummy text
+            </p>
+          </div>
+        </div>
+        <button>Order</button>
+      </aside>
+    </div>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
